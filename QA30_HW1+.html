@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var age=prompt("Input your age", '');
+
+function CheckAge3(age) {
+    let resp, 
+        age_2 = 18, 
+        age_3 = 60;
+
+if ((!isNaN(Number(age)))&(age>0)) {
+
+    if (age < age_2) {
+        resp = 'You don`t have access cause your age is ' + age + ' It`s less then 18'
+}
+    else if ((age >= age_2)&(age < age_3)) {
+        resp = 'Welcome !'
+}
+    else if (age >= age_3) {
+        resp = 'Keep calm and look Culture channel !'
+}
+    else {
+        resp = 'Technical work'
+}
+}
+else resp='Age is not a valid value or your age is less then 0';
+return resp;
+}
+alert (CheckAge3(age))
+</script>
+</head>
+<body>
+
+</body>
+</html>
